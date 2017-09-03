@@ -15,7 +15,7 @@ namespace GRS.Repository
         {
             using (var dbContext = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
-                return dbContext.Candidates.ToList();
+                return dbContext.Candidates.ToArray();
             }
         }
 

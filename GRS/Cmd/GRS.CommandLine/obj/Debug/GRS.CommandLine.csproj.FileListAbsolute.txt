@@ -16,3 +16,11 @@ C:\GitHub\GeekHunters\GRS\GRS.CommandLine\obj\Debug\GRS.CommandLine.exe
 C:\GitHub\GeekHunters\GRS\GRS.CommandLine\obj\Debug\GRS.CommandLine.pdb
 C:\GitHub\GeekHunters\GRS\GRS.CommandLine\bin\Debug\GRS.DataAccess.dll
 C:\GitHub\GeekHunters\GRS\GRS.CommandLine\bin\Debug\GRS.DataAccess.pdb
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\bin\Debug\GRS.CommandLine.exe.config
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\obj\Debug\GRS.CommandLine.csprojResolveAssemblyReference.cache
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\bin\Debug\GRS.CommandLine.exe
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\bin\Debug\GRS.CommandLine.pdb
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\obj\Debug\GRS.CommandLine.exe
+C:\GitHub\GeekHunters\GRS\Cmd\GRS.CommandLine\obj\Debug\GRS.CommandLine.pdb

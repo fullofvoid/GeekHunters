@@ -1,15 +1,17 @@
 ﻿using GRS.DataAccess.Models;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 
 namespace GRS.DataAccess
 {
     public interface ICandidateEntities: IDisposable
     {
 
-        DbSet<Candidate> Candidates { get; set; }
-        DbSet<CandidateSkill> CandidateSkills { get; set; }
-        DbSet<Skill> Skills { get; set; }
+        IDbSet<Candidate> Candidates { get; set; }
+        IDbSet<CandidateSkill> CandidateSkills { get; set; }
+        IDbSet<Skill> Skills { get; set; }
 
         int SaveChanges();
     }

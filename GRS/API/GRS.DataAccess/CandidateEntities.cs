@@ -13,9 +13,9 @@ namespace GRS.DataAccess
         {
         }
 
-        public virtual DbSet<Candidate> Candidates { get; set; }
-        public virtual DbSet<CandidateSkill> CandidateSkills { get; set; }
-        public virtual DbSet<Skill> Skills { get; set; }
+        public virtual IDbSet<Candidate> Candidates { get; set; }
+        public virtual IDbSet<CandidateSkill> CandidateSkills { get; set; }
+        public virtual IDbSet<Skill> Skills { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

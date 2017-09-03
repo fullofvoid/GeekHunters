@@ -1,7 +1,5 @@
 # Geek Hunters
-
-You are working in IT-recruiting agency "Geek Hunters". Your employer asked you to implement Geek Registration System
-(GRS). 
+This is an implementation of Geek Registration System(GRS). 
 
 Using GRS a recruitment agent should be able to:
   - register a new candidate:
@@ -10,18 +8,12 @@ Using GRS a recruitment agent should be able to:
   - view all candidates
   - filter candidates by technology
 
+-Implementation consist of
+ - API gateway
+ - Windows App that consumes API - Fully Featured
+ - Console App that consumes API - Partially Featured
+ 
+ - Unit testing is only available for APIs 
+ 
+ Enjoy!
 
-Another developer has partially designed and implemented a
-SQLite DB for this project - GeekHunters.sqlite. Feel free to modify a structure to
-your needs.
-
-Please fork the project and commit your source code (please do not archive it :) ).
-
-You are free to use **ANY** technology and frameworks you need -
-Console Application / Desktop / Web. However, if you decide to go with third
-party package manager or dev tool - don't forget to mention them in the
-README.md of your fork.
-
-Good luck!
-
-P.S: And unit tests! We love unit tests!

@@ -38,13 +38,13 @@ namespace GRS.WebApi.Controllers
         // POST: api/Candidate
         public void Post([FromBody]CandidateDetailViewModel value)
         {
-            _candidateService.Save(value);
+            _candidateService.Update(value);
         }
 
         // PUT: api/Candidate
         public void Put([FromBody]CandidateDetailViewModel value)
         {
-            _candidateService.New(value);
+            _candidateService.Insert(value);
         }
 
         // DELETE: api/Candidate/5

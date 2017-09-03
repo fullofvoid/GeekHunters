@@ -121,7 +121,7 @@
     </Compile>
     <Compile Include="Models\GetCandidatesViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\SkillServices.cs" />
+    <Compile Include="Services\CandidateServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

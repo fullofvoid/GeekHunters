@@ -11,9 +11,9 @@ namespace GRS.WebApi.Controllers
 {
     public class CandidateController : ApiController
     {
-        private CandidateServices _candidateService;
+        private ICandidateServices _candidateService;
 
-        public CandidateController(CandidateServices candidateService)
+        public CandidateController(ICandidateServices candidateService)
         {
             _candidateService = candidateService;
         }

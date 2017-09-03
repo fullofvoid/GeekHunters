@@ -19,7 +19,7 @@ namespace GRS.WebApi
         {
             var builder = new ContainerBuilder();
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
-            builder.RegisterType<CandidateServices>().AsSelf().InstancePerRequest();
+            builder.RegisterType<CandidateServices>().As<ICandidateServices>().InstancePerRequest();
             builder.RegisterType<CandidateRepository>().As<ICandidateRepository>().InstancePerRequest();
             builder.RegisterType<CandidateEntities>().As<ICandidateEntities>().InstancePerDependency();
             var container = builder.Build();

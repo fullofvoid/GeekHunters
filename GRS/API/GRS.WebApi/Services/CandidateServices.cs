@@ -7,7 +7,7 @@ using System.Web;
 
 namespace GRS.WebApi.Services
 {
-    public class CandidateServices
+    public class CandidateServices: ICandidateServices
     {
         private ICandidateRepository _repository;
 

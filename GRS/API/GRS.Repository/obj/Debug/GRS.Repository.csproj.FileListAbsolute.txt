@@ -31,3 +31,5 @@ C:\GitHub\GeekHunters\GRS\API\GRS.Repository\bin\Debug\System.Data.SQLite.xml
 C:\GitHub\GeekHunters\GRS\API\GRS.Repository\obj\Debug\GRS.Repository.csprojResolveAssemblyReference.cache
 C:\GitHub\GeekHunters\GRS\API\GRS.Repository\obj\Debug\GRS.Repository.dll
 C:\GitHub\GeekHunters\GRS\API\GRS.Repository\obj\Debug\GRS.Repository.pdb
+C:\GitHub\GeekHunters\GRS\API\GRS.Repository\bin\Debug\Autofac.dll
+C:\GitHub\GeekHunters\GRS\API\GRS.Repository\bin\Debug\Autofac.xml

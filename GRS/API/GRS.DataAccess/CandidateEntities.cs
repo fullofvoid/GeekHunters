@@ -6,7 +6,7 @@ namespace GRS.DataAccess
     using System.Linq;
     using Models;
 
-    public partial class CandidateEntities : DbContext
+    public partial class CandidateEntities : DbContext, ICandidateEntities
     {
         public CandidateEntities()
             : base("name=CandidateModel")

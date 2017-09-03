@@ -38,3 +38,7 @@ C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\bin\System.Web.Http.WebHost.xml
 C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\obj\Debug\GRS.WebApi.csprojResolveAssemblyReference.cache
 C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\obj\Debug\GRS.WebApi.dll
 C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\obj\Debug\GRS.WebApi.pdb
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\bin\Autofac.dll
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\bin\Autofac.Integration.WebApi.dll
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\bin\Autofac.xml
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi\bin\Autofac.Integration.WebApi.xml

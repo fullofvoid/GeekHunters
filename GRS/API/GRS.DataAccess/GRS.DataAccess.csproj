@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICandidateEntities.cs" />
     <Compile Include="Models\Candidate.cs" />
     <Compile Include="CandidateEntities.cs" />
     <Compile Include="Models\CandidateSkill.cs" />

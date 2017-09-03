@@ -25,6 +25,5 @@ C:\GitHub\GeekHunters\GRS\API\GRS.DataAccess\bin\Debug\System.Data.SQLite.Linq.d
 C:\GitHub\GeekHunters\GRS\API\GRS.DataAccess\bin\Debug\EntityFramework.xml
 C:\GitHub\GeekHunters\GRS\API\GRS.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 C:\GitHub\GeekHunters\GRS\API\GRS.DataAccess\bin\Debug\System.Data.SQLite.xml
-C:\GitHub\GeekHunters\GRS\API\GRS.DataAccess\obj\Debug\GRS.DataAccess.csprojResolveAssemblyReference.cache
 C:\GitHub\GeekHunters\GRS\API\GRS.DataAccess\obj\Debug\GRS.DataAccess.dll
 C:\GitHub\GeekHunters\GRS\API\GRS.DataAccess\obj\Debug\GRS.DataAccess.pdb

@@ -10,28 +10,27 @@ namespace GRS.Repository
 {
     public class CandidateRepository : ICandidateRepository
     {
-        public CandidateRepository() { }
-
+        
         public IEnumerable<Candidate> GetAllCandidates()
         {
-            using (var context = new CandidateEntities())
+            using (var dbContext = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
-                return context.Candidates.ToList();
+                return dbContext.Candidates.ToList();
             }
         }
 
         public IEnumerable<Candidate> GetCandidateBySkill(long skillId)
         {
-            using (var context = new CandidateEntities())
+            using (var dbContext = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
-                var selectedCandidateSkills = context.CandidateSkills.Where(x => x.SkillId == skillId);
-                var selectedCandidates = context.Candidates.Where(x => selectedCandidateSkills.Any(y => y.CandidateId == x.Id));
+                var selectedCandidateSkills = dbContext.CandidateSkills.Where(x => x.SkillId == skillId);
+                var selectedCandidates = dbContext.Candidates.Where(x => selectedCandidateSkills.Any(y => y.CandidateId == x.Id));
                 return selectedCandidates.ToList();
             }
         }
         public void Delete(int id)
         {
-            using (var context = new CandidateEntities())
+            using (var context = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
                 var candidate = context.Candidates.First(x => x.Id == id);
                 var candidateSkills = context.CandidateSkills.Where(x => x.CandidateId == id);
@@ -45,7 +44,7 @@ namespace GRS.Repository
 
         public void Insert(string firstName, string lastName, IEnumerable<long> skills)
         {
-            using (var context = new CandidateEntities())
+            using (var context = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
                 var candidate = new Candidate()
                 {
@@ -61,7 +60,7 @@ namespace GRS.Repository
         }
         public void UpdateCandidate(long id, string firstName, string lastName, IEnumerable<long> skills)
         {
-            using (var context = new CandidateEntities())
+            using (var context = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
                 var candidate = context.Candidates.First(x => x.Id == id);
                 candidate.FirstName = firstName;
@@ -75,7 +74,7 @@ namespace GRS.Repository
             
         }
 
-        private static void AddNewSkills(CandidateEntities context, IEnumerable<CandidateSkill> currentSkills, long candidateId, IEnumerable<long> newSkills)
+        private static void AddNewSkills(ICandidateEntities context, IEnumerable<CandidateSkill> currentSkills, long candidateId, IEnumerable<long> newSkills)
         {
             foreach (var skillId in newSkills)
             {
@@ -90,7 +89,7 @@ namespace GRS.Repository
             }
         }
 
-        private static void RemoveOldSkills(CandidateEntities context, IEnumerable<CandidateSkill> currentSkills, IEnumerable<long> newSkills)
+        private static void RemoveOldSkills(ICandidateEntities context, IEnumerable<CandidateSkill> currentSkills, IEnumerable<long> newSkills)
         {
             foreach (var currentSkill in currentSkills)
             {
@@ -103,17 +102,25 @@ namespace GRS.Repository
 
         public IEnumerable<long> GetCandidateSkills(long candidateId)
         {
-            using (var context = new CandidateEntities())
+            using (var context = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
                 var candidateSkills = context.CandidateSkills.Where(x => x.CandidateId == candidateId).ToList();
                 return candidateSkills.Select(x => x.SkillId);
             }
         }
         public Candidate GetCandidate(long id) {
-            using (var context = new CandidateEntities())
+            using (var context = DBContextResolver.CreateNewInstance<ICandidateEntities>())
             {
                 var candidate = context.Candidates.FirstOrDefault(x => x.Id == id);
                 return candidate;
+            }
+        }
+
+        public IEnumerable<Skill> GetAllSkills()
+        {
+            using (var context = DBContextResolver.CreateNewInstance<ICandidateEntities>())
+            {
+                return context.Skills.ToList();
             }
         }
 

@@ -6,6 +6,7 @@ namespace GRS.Repository
     public interface ICandidateRepository
     {
         IEnumerable<Candidate> GetAllCandidates();
+        IEnumerable<Skill> GetAllSkills();
         Candidate GetCandidate(long id);
         IEnumerable<Candidate> GetCandidateBySkill(long skillId);
         IEnumerable<long> GetCandidateSkills(long candidateId);

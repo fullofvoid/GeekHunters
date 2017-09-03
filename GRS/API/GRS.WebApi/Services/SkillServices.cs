@@ -9,15 +9,19 @@ namespace GRS.WebApi.Services
 {
     public class CandidateServices
     {
+        private ICandidateRepository _repository;
+
+        public CandidateServices(ICandidateRepository repository)
+        {
+            _repository = repository;
+        }
 
         public GetCandidatesViewModel GetAll()
         {
-            ISkillRepository repo = new SkillRepository();
-            var skillViewModelList = repo.GetAllSkills().Select(
+            var skillViewModelList = _repository.GetAllSkills().Select(
                 x=> new SkillViewModel() {Id = x.Id, Name = x.Name  });
 
-            ICandidateRepository repo2 = new CandidateRepository();
-            var candidateViewModelList = repo2.GetAllCandidates().Select(
+            var candidateViewModelList = _repository.GetAllCandidates().Select(
                 x => new CandidateViewModel() { Id = x.Id, FirstName = x.FirstName, LastName = x.LastName });
 
             return new GetCandidatesViewModel() {
@@ -28,9 +32,8 @@ namespace GRS.WebApi.Services
 
         public CandidateDetailViewModel GetDetail(int id)
         {
-            ICandidateRepository repo = new CandidateRepository();
-            var skills = repo.GetCandidateSkills(id);
-            var candidate = repo.GetCandidate(id);
+            var skills = _repository.GetCandidateSkills(id);
+            var candidate = _repository.GetCandidate(id);
             return new CandidateDetailViewModel()
             {
                 Id = id,
@@ -43,26 +46,23 @@ namespace GRS.WebApi.Services
 
         public void DeleteCandidate(int id)
         {
-            ICandidateRepository repository = new CandidateRepository();
-            repository.Delete(id);
+            _repository.Delete(id);
+
         }
 
         public void New(CandidateDetailViewModel value)
         {
-            ICandidateRepository repository = new CandidateRepository();
-            repository.Insert(value.FirstName, value.LastName, value.Skills);
+            _repository.Insert(value.FirstName, value.LastName, value.Skills);
         }
 
         public void Save(CandidateDetailViewModel value)
         {
-            ICandidateRepository repository = new CandidateRepository();
-            repository.UpdateCandidate(value.Id, value.FirstName, value.LastName, value.Skills);
+            _repository.UpdateCandidate(value.Id, value.FirstName, value.LastName, value.Skills);
         }
 
         public GetCandidatesBySkillViewModel GetBySkill(long skillId)
         {
-            ICandidateRepository repository = new CandidateRepository();
-            var candidateViewModelList = repository.GetCandidateBySkill(skillId).Select(
+            var candidateViewModelList = _repository.GetCandidateBySkill(skillId).Select(
                 x => new CandidateViewModel() { Id = x.Id, FirstName = x.FirstName, LastName = x.LastName });
 
             return new GetCandidatesBySkillViewModel()

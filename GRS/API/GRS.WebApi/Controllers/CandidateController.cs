@@ -11,39 +11,46 @@ namespace GRS.WebApi.Controllers
 {
     public class CandidateController : ApiController
     {
+        private CandidateServices _candidateService;
+
+        public CandidateController(CandidateServices candidateService)
+        {
+            _candidateService = candidateService;
+        }
+
         // GET: api/Candidate
         public GetCandidatesViewModel Get()
         {
-            return new CandidateServices().GetAll();
+            return _candidateService.GetAll();
         }
 
         public CandidateDetailViewModel Get(int id)
         {
-            return new CandidateServices().GetDetail(id);
+            return _candidateService.GetDetail(id);
         }
 
         // GET: api/SkillSearch/5
         [Route("api/Candidate/GetBySkill/{skillId}")]
         public GetCandidatesBySkillViewModel GetBySkill(int skillId)
         {
-            return new CandidateServices().GetBySkill(skillId);
+            return _candidateService.GetBySkill(skillId);
         }
         // POST: api/Candidate
         public void Post([FromBody]CandidateDetailViewModel value)
         {
-            new CandidateServices().Save(value);
+            _candidateService.Save(value);
         }
 
         // PUT: api/Candidate
         public void Put([FromBody]CandidateDetailViewModel value)
         {
-            new CandidateServices().New(value);
+            _candidateService.New(value);
         }
 
         // DELETE: api/Candidate/5
         public void Delete(int id)
         {
-            new CandidateServices().DeleteCandidate(id);
+            _candidateService.DeleteCandidate(id);
         }
     }
 }

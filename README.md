@@ -13,7 +13,7 @@ Using GRS a recruitment agent should be able to:
  - Windows App that consumes API - Fully Featured
  - Console App that consumes API - Partially Featured
  
- - Unit testing is only available for APIs 
+ - Unit testing is only available for APIs at this point
  
  Enjoy!
 

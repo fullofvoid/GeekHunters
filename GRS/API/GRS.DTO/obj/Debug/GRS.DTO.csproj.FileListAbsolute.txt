@@ -1,0 +1,5 @@
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.DTO\bin\Debug\GRS.DTO.dll
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.DTO\bin\Debug\GRS.DTO.pdb
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.DTO\obj\Debug\GRS.DTO.csprojResolveAssemblyReference.cache
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.DTO\obj\Debug\GRS.DTO.dll
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.DTO\obj\Debug\GRS.DTO.pdb

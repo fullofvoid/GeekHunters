@@ -1,0 +1,12 @@
+C:\GitHub\GeekHunters\GRS\GSRForms\bin\Debug\GSRForms.exe.config
+C:\GitHub\GeekHunters\GRS\GSRForms\bin\Debug\GSRForms.exe
+C:\GitHub\GeekHunters\GRS\GSRForms\bin\Debug\GSRForms.pdb
+C:\GitHub\GeekHunters\GRS\GSRForms\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\GeekHunters\GRS\GSRForms\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\GeekHunters\GRS\GSRForms\obj\Debug\GSRForms.csprojResolveAssemblyReference.cache
+C:\GitHub\GeekHunters\GRS\GSRForms\obj\Debug\GSRForms.Properties.Resources.resources
+C:\GitHub\GeekHunters\GRS\GSRForms\obj\Debug\GSRForms.View.AddEditCandidateView.resources
+C:\GitHub\GeekHunters\GRS\GSRForms\obj\Debug\GSRForms.View.SearchCandidateView.resources
+C:\GitHub\GeekHunters\GRS\GSRForms\obj\Debug\GSRForms.csproj.GenerateResource.Cache
+C:\GitHub\GeekHunters\GRS\GSRForms\obj\Debug\GSRForms.exe
+C:\GitHub\GeekHunters\GRS\GSRForms\obj\Debug\GSRForms.pdb

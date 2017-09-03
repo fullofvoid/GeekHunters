@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CandidateModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=C:\GitHub\GeekHunters\GeekHunter.sqlite" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Candidate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CandidateSkill">
+    <Key>
+      <PropertyRef Name="CandidateId" />
+      <PropertyRef Name="SkillId" />
+    </Key>
+    <Property Name="CandidateId" Type="integer" Nullable="false" />
+    <Property Name="SkillId" Type="integer" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Skill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CandidateModelStoreContainer">
+    <EntitySet Name="Candidate" EntityType="Self.Candidate" store:Type="Tables" />
+    <EntitySet Name="CandidateSkill" EntityType="Self.CandidateSkill" store:Type="Tables" />
+    <EntitySet Name="Skill" EntityType="Self.Skill" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

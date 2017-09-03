@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net452": {
+      "wrappedProject": "../../GRS.DTO/GRS.DTO.csproj",
+      "bin": {
+        "assembly": "../../GRS.DTO/obj/{configuration}/GRS.DTO.dll",
+        "pdb": "../../GRS.DTO/obj/{configuration}/GRS.DTO.pdb"
+      }
+    }
+  }
+}

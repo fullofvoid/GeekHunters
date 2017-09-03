@@ -1,0 +1,12 @@
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.WebApi.Tests\bin\Debug\GRS.WebApi.Tests.dll
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.WebApi.Tests\bin\Debug\GRS.WebApi.Tests.pdb
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.WebApi.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.WebApi.Tests\obj\Debug\GRS.WebApi.Tests.csprojResolveAssemblyReference.cache
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.WebApi.Tests\obj\Debug\GRS.WebApi.Tests.dll
+C:\GitHub\GeekHunters\GRS\WebAPI\GRS.WebApi.Tests\obj\Debug\GRS.WebApi.Tests.pdb
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi.Tests\bin\Debug\GRS.WebApi.Tests.dll
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi.Tests\bin\Debug\GRS.WebApi.Tests.pdb
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi.Tests\obj\Debug\GRS.WebApi.Tests.csprojResolveAssemblyReference.cache
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi.Tests\obj\Debug\GRS.WebApi.Tests.dll
+C:\GitHub\GeekHunters\GRS\API\GRS.WebApi.Tests\obj\Debug\GRS.WebApi.Tests.pdb

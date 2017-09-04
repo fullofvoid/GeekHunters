@@ -15,5 +15,10 @@ Using GRS a recruitment agent should be able to:
  
  - Unit testing is only available for APIs at this point
  
+ -Setup
+  - Edit API web config with the correct path to sqlite db
+  - Edit Window App config with the correct API Url
+  - Edit Consol App config with the correct API Url
+ 
  Enjoy!
 
